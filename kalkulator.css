@@ -1,0 +1,123 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: box-shadow 0.3s ease;
+}
+
+.calculator:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+#result {
+    width: 100%;
+    height: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #e9ecef;
+    color: #333;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+#result:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    background-color: #495057;
+    transform: scale(0.98);
+}
+
+/* (C, ⌫, dll.) */
+.function-button {
+    background-color: #28a745;
+}
+
+.function-button:hover {
+    background-color: #218838;
+}
+
+.function-button:active {
+    background-color: #1e7e34;
+}
+
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(20),
+button:nth-child(24) {
+    background-color: #007bff;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover,
+button:nth-child(20):hover,
+button:nth-child(24):hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 22px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Obama</title>
+    <link rel="stylesheet" href="kalkulator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+            <button class="function-button" onclick="clearResult()"><i class="fas fa-undo-alt"></i> C</button>
+            <button class="function-button" onclick="backspace()"><i class="fas fa-backspace"></i> ⌫</button>
+            <button onclick="appendToResult('(')">(</button>
+            <button onclick="appendToResult(')')">)</button>
+            <button onclick="appendToResult('7')">7</button>
+            <button onclick="appendToResult('8')">8</button>
+            <button onclick="appendToResult('9')">9</button>
+            <button class="function-button" onclick="appendToResult('/')"><i class="fas fa-divide"></i></button>
+            <button onclick="appendToResult('4')">4</button>
+            <button onclick="appendToResult('5')">5</button>
+            <button onclick="appendToResult('6')">6</button>
+            <button class="function-button" onclick="appendToResult('*')"><i class="fas fa-times"></i></button>
+            <button onclick="appendToResult('1')">1</button>
+            <button onclick="appendToResult('2')">2</button>
+            <button onclick="appendToResult('3')">3</button>
+            <button class="function-button" onclick="appendToResult('-')"><i class="fas fa-minus"></i></button>
+            <button onclick="appendToResult('0')">0</button>
+            <button onclick="appendToResult('.')"><i class="fas fa-dot-circle"></i></button>
+            <button onclick="calculateResult()"><i class="fas fa-equals"></i></button>
+            <button class="function-button" onclick="appendToResult('+')"><i class="fas fa-plus"></i></button>
+            <button class="function-button" onclick="calculatePercentage()">%</button>
+            <button class="function-button" onclick="calculateSquareRoot()">√</button>
+            <button class="function-button" onclick="calculateSquare()">x²</button>
+            <button class="function-button" onclick="calculateLog()">log</button>
+            <button class="function-button" onclick="calculateFactorial()">n!</button>
+            <button class="function-button" onclick="calculateSin()">sin</button>
+            <button class="function-button" onclick="calculateCos()">cos</button>
+            <button class="function-button" onclick="calculateTan()">tan</button>
+        </div>
+    </div>
+    <script src="kalkulator.js"></script>
+</body>
+</html>
